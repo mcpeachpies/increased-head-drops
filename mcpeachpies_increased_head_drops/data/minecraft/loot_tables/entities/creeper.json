@@ -68,6 +68,26 @@
           "looting_multiplier": 0.01
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:music_disc_pigstep",
+          "conditions": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "is_projectile": true,
+                "source_entity": {
+                  "type": "minecraft:piglin"
+                }
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "random_sequence": "minecraft:entities/creeper"
